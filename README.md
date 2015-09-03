@@ -11,7 +11,7 @@ $ docker pull neochrome/ssl-proxy
 If your application is running and is listening on port 3000:
 
 ```
-$ docker run -it --name ssl-proxy -p 8080:80 -p 4343:443 ssl-proxy
+$ docker run -it --name ssl-proxy -p 8080:80 -p 4343:443 neochrome/ssl-proxy
 ```
 
 A nginx proxy will be started on ports 8080 (http) and 4343 (https) with an upstream
